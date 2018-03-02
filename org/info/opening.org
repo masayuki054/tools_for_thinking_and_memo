@@ -1,0 +1,28 @@
+#+setupfile: ~/COMM/public_html/org-html-theme/index-bigblow-header.setup
+#+include: ~/COMM/Lects/prog/site/info/common-header.org
+#+title: 開講通知 
+
+* 開講情報
+
+  - 日時：2015年 10月 06日（火曜日）13:00- 
+  - 場所：106端末室
+  - 講義用サイト:
+    http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog (調整中)
+ 
+* 概要
+
+  ソフトウェアの設計・テスト・開発について，体験的に学ぶ
+
+* 初回 10/06
+
+  講義内容の説明とcutterを用いたソフトウェア・テスト
+
+* 休講通知
+
+  10/20 (火)  は休講にします。
+
+* 担当
+
+  - 非常勤講師 鈴木正幸
+  - mail: suzuki@cis.iwate-u.ac.jp
+

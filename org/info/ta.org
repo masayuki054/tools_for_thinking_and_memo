@@ -1,0 +1,43 @@
+#+title: ソフトウェア構成論 TAの学生さんへ
+#+setupfile: ~/COMM/public_html/org-html-theme/index-bigblow-header.setup
+#+include: ~/COMM/Lects/prog/site/info/common-header.org
+
+* TAさんへのお願い
+  SCHEDULED: <2015-10-02 金>
+** 講義中のこと
+
+   学生はなかなか質問したり，手を挙げたりしないので，
+   こまめに動きまわって，状況を尋ねて下さい。
+
+   自信をもって答えられない場合も多いと思います。そんな時は，きがるに僕
+   にふってください。
+
+
+** 時間帯
+
+   火曜日 13:00~15:00 
+
+** あたらしい講義内容
+
+   - カード表示問題のテストによる開発
+   - cutter 単体テストフレームワーク
+
+     http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog<
+
+  ドキュメントがあるので読んで，
+
+  - 自分でやってほしい
+  - 読んで，間違いやわかりにくいところを指摘してほしい
+
+
+
+
+
+
+
+
+
+   
+
+
+   

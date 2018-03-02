@@ -1,0 +1,14 @@
+#+BEGIN_SRC sh :results output org :exports results
+sh ~/COMM/Lects/bin/org_link_make.sh prog info/openning.html 開講通知
+sh ~/COMM/Lects/bin/org_link_make.sh prog info/prog-2015.html 20142015
+#+END_SRC
+
+
+- [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog/info/openning.html][開講通知]] (([[file+emacs:~suzuki/lects/prog/info/openning.org][@cis.org]] [[file+emacs:~/COMM/Lects/prog/site/info/openning.org][@s.org]]))
+- [[http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/prog/info/prog-2015.html][2014~2015]] (([[file+emacs:~suzuki/lects/prog/info/prog-2015.org][@cis.org]] [[file+emacs:~/COMM/Lects/prog/site/info/prog-2015.org][@s.org]]))
+
+#+include: links.org
+
+* 講義ドキュメント
+
+#+inlcude: org-docs/contents.org

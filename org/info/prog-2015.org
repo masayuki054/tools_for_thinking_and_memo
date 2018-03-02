@@ -1,0 +1,179 @@
+#+title: ソフトウェア構成論 2014->2015
+#+setupfile: ~/COMM/public_html/org-html-theme/index-bigblow-header.setup
+#+include: ~/COMM/Lects/prog/site/info/common-header.org
+
+* 2014年度後半を振り返って
+
+** 講義内容
+
+*** CardDisplay プロジェクト
+
+    全6~7回かかってしまったが，内容的には成功と思う
+
+    学生達には取っ付きにくかったようだが，しょうがない。必然。
+
+** 成績評価
+
+   各自のレポートを見るために，report-view.org を作成した
+
+   レスポンスカードをスキャンし，見せた
+
+** 講義時間
+
+   14:30 定時で講義は終了。以後作業を見守る。TAも3:00まで。
+
+** 反省
+
+   - 図を綺麗に
+
+   ‐ ソースプログラムに穴をあけたらよかったかも
+
+   ‐ レポートの書き方に注意を与えよう
+
+   - emacs-org の使い方を説明しよう
+
+   ‐ 席とログイン名の対応，特徴を
+
+
+* Doing ドキュメントの見直し
+  SCHEDULED: <2015-09-04 Fri>
+
+  org-html-theme/bigblow を用いた文書作成
+
+  - rd記法を取り除き，全面的にorg記法に書き換える
+  - collapse/expand できることを利用しよう
+  - ソースコードを表示する
+
+  各orgファイルには
+
+** 旧 CardDisplay プロジェクト
+
+*** progress [/]
+  - [ ] card_display.org
+  - [ ] card_display_simple.org
+  - [ ] card_display_multi.org
+  - [ ] card_display_compile_and_make.org
+  - [ ] card_display_sort.org
+  - [ ] card_display_image.org
+
+
+* Doing 講義内容の検討
+  SCHEDULED: <2015-09-01 火>
+  
+** 導入をやろう
+   
+   - ライブラリを使ったプログラム
+   - 機能，要求，実現，提供，利用，テスト，開発，駆動開発
+   
+** 背景
+
+   - [[https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E5%B7%A5%E5%AD%A6][ソフトウェア工学 - Wikipedia]] ソフトウェアを上手に開発するために
+
+   - [[https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%E5%B7%A5%E7%A8%8B][ソフトウェア開発工程 - Wikipedia]] 反復型とテスト
+
+   - [[http://www.logos.t.u-tokyo.ac.jp/~tau/lecture/computer_software/gen/slides/2-correctness.pdf][コンピュータソフトウェア - 2-correctness.pdf]] プログラムの正しさとは
+
+** プログラミング入門，プログラム演習I, II をふりかえる
+
+   cis-programming-lects
+   - [[file://./cis-programming-0.org][プログラミング入門]]
+   - [[file://./cis-programming-1.org][プログラム演習I]]
+   - [[file://./cis-programming-2.org][プログラム演習II]]
+   
+** 未経験なこと
+
+   - 設計をしていない
+   - 開発を経験していない
+
+   設計と開発を経験しよう
+
+** 導入
+
+   what_is_tdd
+
+   - ライブラリを使ったプログラムの意味
+
+   - テスト駆動開発とは 
+     - 機能，要求，実現，提供，利用，テスト，開発，テスト駆動開発 とは？
+
+*** CardDisplay問題とテスト駆動開発
+
+
+**** 問題と設計
+     org-doc/card-display/card_display.org
+     org-doc/card-display/card_display_.org
+
+**** 目的
+
+     簡単なプログラム開発サイクルを経験する
+
+     - カードの印刷のためのカードの機能の実現
+     - 要求と実装の変更、
+     - 部品化，カードモジュールの作成
+
+**** テスト駆動開発
+     - card_display_simple問題のテスト駆動開発 
+     - card_sisplay_multi問題のテスト駆動開発
+     - card_sisplay_sort問題のテスト駆動開発
+   - カードモジュールへ
+
+
+* Doing 講義のドキュメント化
+
+  講義のドキュメント化がまだ終わっていません。確認のためのチェックリストです:
+
+  - [X] Makefile
+
+  - [X] index.org
+
+  - HTML化 [4/6]
+    - [X] cis-programming-lects/
+    - [X] file:cutter/
+    - [X] what-is-tdd [2/2]
+      - [X] slideshare のプレゼン
+      - [X] qiita の文書
+    - [X] card-display/
+    - [-] tdd-card-display-simple [1/7]
+      - [X] test_card_suit_new_from_string
+      - [ ] test_card_no_new_from_string
+      - [ ] test_card_new, suit, no
+      - [ ] test_card_no_to_string
+      - [ ] test_card_suit_to_string
+      - [ ] test_card_to_string
+      - [ ] card_display_single
+    - [ ] poker
+    - [ ] memos
+
+#+BEGIN_SRC sh :results output 
+pwd
+ls ../../org-docs/memos 
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+/Users/s/COMM/Lects/prog/site/lects/01
+c.org
+card-module.org
+emacs.org
+env.org
+glib.org
+index.html
+index.org
+module.org
+prog.org
+progs.org
+shell.org
+svn-fix.org
+svn.org
+vc.org
+#+end_example
+
+  
+  - [ ] module.org
+
+
+* Cancel 全 wiki_page へのリンクをorg化
+   
+
+   
+

@@ -1,0 +1,6 @@
+#+OPTIONS:   H:6 toc:nil num:nil
+#+OPTIONS: ^:{}
+#+PROPERTY:  header-args :padline no
+#+title: 微分ゼミ
+#+author: suzuki@iwate-u.ac.jp
+#+HTML_MATHJAX:  path:"http://cdn.mathjax.org/mathjax/latest/MathJax.js"

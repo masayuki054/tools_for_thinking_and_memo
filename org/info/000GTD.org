@@ -1,0 +1,24 @@
+* prog/site/info
+  
+** contents.org 
+   SCHEDULED: <2015-11-10 火>
+
+   info が提供するコンテンツ
+
+** map.org
+   SCHEDULED: <2015-11-10 火>
+
+   map.org はサイトマップに include される
+   ディレクトリにあるコンテンツへのリンク，
+   そのサブディレクリのマップのインクルード
+
+   こんな感じ: 
+
+#+BEGIN_SRC ruby
+
+   sitemap = Dir.chdir('progs/site') do
+     [".", "info", "lects", "org-docs"].each do |dir|
+       Dir.glob(*.html).map { |c|  to_link (c) }
+       Dir.glob("*/").map { |d| "#+include: #{d}/map.org" }
+
+#+END_SRC
