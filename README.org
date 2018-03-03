@@ -32,22 +32,22 @@
 ** 資料
 
 *** デジタル文書に関する
-[[file:~/COMM/Lects/BCUniv/git/org/hyper_link.org]]
+[[file:org/hyper_link.org]]
 
 
 *** outline 
 
-- [[file:~/COMM/Lects/BCUniv/git/org/ict_and_outline.org]]
+- [[file:org/ict_and_outline.org]]
   
-- [[file:~/COMM/Lects/BCUniv/git/org/outline-reading-writing.org]]  
+- [[file:org/outline-reading-writing.org]]  
 
-- [[file:~/COMM/Lects/BCUniv/git/org/outline.org]]
+- [[file:org/outline.org]]
 
 *** 思考について
 
 - [[./org/arts_of_thinking_resume.org][知的思考の7つのステップ]]
 
-- [[file:~/COMM/Lects/BCUniv/git/org/computational_thinking.org]]
+- [[file:org/computational_thinking.org]]
 
 *** 発想法
 
