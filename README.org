@@ -1,0 +1,38 @@
+#+include: org/info/common-header.org
+#+OPTIONS:   H:6 toc:nil num:nil　
+#+OPTIONS: ^:{}
+#+PROPERTY:  header-args :padline no
+#+title: 
+#+author: suzuki@iwate-u.ac.jp
+
+#+BEGIN_SRC elisp :exports none
+(setq org-startup-with-inline-images t)
+#+END_SRC
+
+* メモと思考とデジタル技術
+
+- 平成30年度 放送大学 基盤科目 
+- 実施日時 2018.12.08~09 
+
+** 講義のねらい
+
+思考する方法について，考え・学び・実践してみましょう。
+
+思考の過程や結果をメモする方法について，考え・学び・実践してみましょう。
+
+インターネットとパソコン，スマホを使って，メモと思考を深めましょう。
+
+上手に深かく考えたり，講義ノートや読書ノートを上手に取れるように，なり
+ましょう。
+
+** 講義について
+
+   [[./org/講義概要.org][講義概要]]
+
+** 資料
+
+   [[./org/水平思考.org][水平思考]] 
+
+   
+
+
