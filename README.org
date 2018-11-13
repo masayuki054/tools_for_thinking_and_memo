@@ -33,12 +33,12 @@
 
 ** 資料
 
-*** デジタル文書に関する
+*** デジタル文書に関するもの
 - [[file:org/hyper_link.org]]
 
 - [[file:org/markup.org]]
 
-*** outline 
+*** outlining について
 
 - [[file:org/ict_and_outline.org]]
   
@@ -57,6 +57,14 @@
 *** 発想法
 
 - [[./org/水平思考.org][水平思考]] 
+
+*** 思考とメモについての手描きマップ・メモ
+
+- [[./maps/ノートを作る.pdf]]
+- [[./maps/図で考える.pdf]]
+- [[./maps/思考のプロセス化.pdf]]
+- [[./maps/知的思考の技術.pdf]]
+- [[./maps/講義の内容.pdf]]
 
    
 
