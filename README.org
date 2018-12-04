@@ -31,41 +31,43 @@
 
    - [[file:org/進行.org][講義進行予定]]
 
+   - [[file:org/talk.org]]
+
 ** 資料
 
 *** デジタル文書に関するもの
-- [[file:org/hyper_link.org]]
+- [[file:org/docs/hyper_link.org]]
 
-- [[file:org/markup.org]]
+- [[file:org/docs/markup.org]]
 
 *** outlining について
 
-- [[file:org/ict_and_outline.org]]
+- [[file:org/docs/ict_and_outline.org]]
   
 - [[file:org/outline-reading-writing.org]]  
 
-- [[file:org/outline.org]]
+- [[file:org/docs/outline.org]]
 
 *** 思考について
 
-- [[./org/arts_of_thinking_resume.org][知的思考の7つのステップ]]
+- [[./org/docs/arts_of_thinking_resume.org][知的思考の7つのステップ]]
 
-- [[./org/critical_thinking.org][批判的思考について]]
+- [[./org/docs/critical_thinking.org][批判的思考について]]
 
-- [[file:org/computational_thinking.org]]
+- [[file:org/docs/computational_thinking.org]]
 
 *** 発想法
 
-- [[./org/水平思考.org][水平思考]] 
+- [[./org/docs/水平思考.org][水平思考]] 
 
 *** 思考とメモについての手描きマップ・メモ
 
-- [[./maps/ノートを作る.pdf]]
-- [[./maps/図で考える.pdf]]
-- [[./maps/思考のプロセス化.pdf]]
-- [[./maps/知的思考の技術.pdf]]
-- [[./maps/講義の内容.pdf]]
-
+- [[./org/i_maps/ノートを作る.pdf]]
+- [[./org/i_maps/図で考える.pdf]]
+- [[./org/i_maps/思考のプロセス化.pdf]]
+- [[./org/i_maps/知的思考の技術.pdf]]
+- [[./org/i_maps/講義の内容.pdf]]
+y
    
 
 

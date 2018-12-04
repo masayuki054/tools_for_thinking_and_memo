@@ -1,6 +1,6 @@
 #+OPTIONS:   H:6 toc:nil num:nil
 #+OPTIONS: ^:{}
 #+PROPERTY:  header-args :padline no
-#+title: 微分ゼミ
+#+title: メモと思考とデジタルツール
 #+author: suzuki@iwate-u.ac.jp
 #+HTML_MATHJAX:  path:"http://cdn.mathjax.org/mathjax/latest/MathJax.js"

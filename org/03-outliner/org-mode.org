@@ -1,0 +1,5 @@
+* emacs + org-mode
+TODO リストとメモ書きにだけ Emacs を使ってみませんか？ - Qiita
+https://qiita.com/yynozk/items/8e45d97abc2d4fce8780
+
+

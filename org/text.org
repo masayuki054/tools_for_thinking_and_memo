@@ -1,0 +1,65 @@
+
+
+
+[[https://bookmeter.com/books/12357844][図で考える。シンプルになる。 感想 櫻田 潤 - 読書メーター]]
+- [[https://www.visualthinking.jp/archives/30448][僕が『図で考える。シンプルになる。』を書いた理由 | ビジュアルシンキング]] 櫻田潤, 2017年10月11日
+- 講師のまとめ
+- 講師のメモマップ
+
+[[http://www.amazon.co.jp/%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2%E3%81%AE%E3%81%A4%E3%81%8F%E3%82%8A%E6%96%B9-%E3%82%B8%E3%82%A7%E3%83%BC%E3%83%A0%E3%82%B9-W-%E3%83%A4%E3%83%B3%E3%82%B0/dp/4484881047][アイデアのつくり方: ジェームス W.ヤング, 竹内 均, 今井 茂雄: 本]]
+- [[/odai/2135860852966383101][ビジネスに役立つ！『アイデアの作り方』まとめ。5つのステップでアイデ
+  ア作成！]]
+- 講師の読書メモ (map)
+
+[[https://bookmeter.com/books/183713][知的思考の技術―考えるフレームを強化する7つのステップの思考術 - 読書メーター]]
+産業能率大学総合研究所知的思考の技術研究プロジェクト
+
+- 講師の読書メモ
+- まとめサイト
+
+ザ・マインドマップ
+- 講師の読書まとめ
+- [[https://ja.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%83%B3%E3%83%89%E3%83%9E%E3%83%83%E3%83%97][マインドマップ - Wikipedia]]
+- [[http://ichirotamagawa.com/mindmap/][玉川一郎公式ページ | 学習速度5倍、発想量3倍のマインドマップ・ノート法]]
+- [[http://mindmap.ainest.com/howto.html][マインドマップとは？ | 初心者のためのマインドマップ]]
+- 講師の読書メモ
+
+XMind
+- [[https://ferret-plus.com/7883][誰でも簡単に使えるマインドマップ作成ツール「XMind」とは？｜フェレット]]
+
+Mindmup
+- "MindMup - Wikipedia":https://en.wikipedia.org/wiki/MindMup
+- 紹介と使い方
+  [[http://vdeep.net/mindmup][マインドマップで頭の中を整理！クラウドで使える「MindMup」が良い感じ | vdeep]]
+
+
+[[https://workflowy.com][Workflowy]]
+- [[http://millkeyweb.com/how-to-use-workflowy/][思考を論理的に整理するアウトラナー WorkFlowy の使い方 - MILL KEY WEB]]
+
+[[https://bookmeter.com/books/578929][ウェブ進化論 本当の大変化はこれから始まる 感想 梅田 望夫 - 読書メーター]] 
+- [[http://www.enjoy-com.com/b/2009/05/post-59.html][梅田望夫「ウェブ進化論 」まとめと所感 - ネットコミュニティブログ]]
+- [[http://wiki.cis.iwate-u.ac.jp/~suzuki/web_revolution/][講師の読書まとめ]]
+- 講師の考えメモ
+
+
+計算論的思考
+
+- wing.indd - ct-japanese.pdf
+  https://www.cs.cmu.edu/afs/cs/usr/wing/www/ct-japanese.pdf
+
+  情報処理的に考えることとその評価基準
+
+GTD
+
+
+     - 時間に関する module 化 か？
+
+       少し違う気がするが，言いえているところもある気がする。
+
+     - software 開発手法， スパイラル，
+       - TDD はすっかりボトムアップ
+
+
+
+
+
