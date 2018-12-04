@@ -1,0 +1,7 @@
+* Mindmup
+** links
+
+   - "MindMup - Wikipedia":https://en.wikipedia.org/wiki/MindMup
+
+   - 紹介と使い方
+     [[http://vdeep.net/mindmup][マインドマップで頭の中を整理！クラウドで使える「MindMup」が良い感じ | vdeep]]
