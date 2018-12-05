@@ -17,7 +17,7 @@
 
   この文書はデジタル文書なので，できればブラウザを使って読んほしいです。
 
-  この文書のURLはです。
+  この文書のURLは https://github.com/masayuki054/tools_for_thinking_and_memo/blob/master/org/talk.org です。
 
   この文書は，Emacs Org-mode という，アウトライナーで書かれています。
 
