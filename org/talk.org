@@ -305,6 +305,17 @@
    - [[http://ichirotamagawa.com/mindmap/][玉川一郎公式ページ | 学習速度5倍、発想量3倍のマインドマップ・ノート法]]
    - [[http://mindmap.ainest.com/howto.html][マインドマップとは？ | 初心者のためのマインドマップ]]
 
+  読書ノートマップ化したものです:
+
+#+BEGIN_CENTER
+
+  [[./x_maps/08-MindMapping.png]]
+
+   ([[./x_maps/08-MindMapping.xmind][XMindファイルのダウンロード]])
+
+#+END_CENTER
+
+
 *** XMind を使ってみよう
 
     [[./docs/xmind.org][まずは覚えたいXMindの操作方法]] を読みながら，
@@ -444,6 +455,16 @@
    - [[https://matome.naver.jp/odai/2135860852966383101][『アイデアの作り方』まとめ。5つのステップでアイデア作成！ - NAVER まとめ]]
 
    読んでまとめのメモを作ってください。
+
+   次のマップは，講師の読書ノートをマップ化したものです:
+
+#+BEGIN_CENTER
+
+   [[./x_maps/07-ideaを生み出す技術.png]]
+
+   ([[./x_maps/07-ideaを生み出す技術.xmind][XMindファイルのダウンロード]])
+#+END_CENTER
+
 
 ** [[https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%B9%B3%E6%80%9D%E8%80%83][水平思考 - Wikipedia]]
 
