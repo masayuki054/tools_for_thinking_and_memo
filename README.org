@@ -29,45 +29,22 @@
 
    - [[./org/講義概要.org][講義概要]]
 
-   - [[file:org/進行.org][講義進行予定]]
+   - [[./org/talk.org][講義の内容]] (配布資料)
 
-   - [[file:org/talk.org]]
+     - Emacs org-mode というアウトライン形式で書かれた，ハイパーテキス
+       トです。
+     
 
-** 資料
+** 資料一覧
 
-*** デジタル文書に関するもの
-- [[file:org/docs/hyper_link.org]]
+   - [[./org/text.org][参考にした本やサイトなど一覧]] (未完成)
 
-- [[file:org/docs/markup.org]]
-
-*** outlining について
-
-- [[file:org/docs/ict_and_outline.org]]
+   - [[./org/memo.org][メモの一覧]]
   
-- [[file:org/outline-reading-writing.org]]  
+   
 
-- [[file:org/docs/outline.org]]
+   
 
-*** 思考について
-
-- [[./org/docs/arts_of_thinking_resume.org][知的思考の7つのステップ]]
-
-- [[./org/docs/critical_thinking.org][批判的思考について]]
-
-- [[file:org/docs/computational_thinking.org]]
-
-*** 発想法
-
-- [[./org/docs/水平思考.org][水平思考]] 
-
-*** 思考とメモについての手描きマップ・メモ
-
-- [[./org/i_maps/ノートを作る.pdf]]
-- [[./org/i_maps/図で考える.pdf]]
-- [[./org/i_maps/思考のプロセス化.pdf]]
-- [[./org/i_maps/知的思考の技術.pdf]]
-- [[./org/i_maps/講義の内容.pdf]]
-y
    
 
 
