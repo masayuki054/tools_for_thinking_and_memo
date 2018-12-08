@@ -5,7 +5,7 @@ EXCLUDES = [
 ]
 
 ORGS = [
-  "index.org", 
+  "talk.org", 
 ]
 
 SUBDIRS = [
