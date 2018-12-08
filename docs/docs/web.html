@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-12-09 日 07:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="m" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org68a354d">1. World Wide Web</a>
+<ul>
+<li><a href="#org1eda403">1.1. 概要</a></li>
+</ul>
+</li>
+<li><a href="#org1bc5877">2. HyperText</a>
+<ul>
+<li><a href="#orgf6a9d34">2.1. HyperLink</a></li>
+<li><a href="#org8f97561">2.2. HTMLによるハイパーリンク</a></li>
+<li><a href="#org2c4dae3">2.3. 読み物</a></li>
+</ul>
+</li>
+<li><a href="#org09694aa">3. markup とは</a></li>
+<li><a href="#orgbc5b287">4. markdown とは</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="https://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%91%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%AF">ハイパーリンク - Wikipedia</a> を読んで
+</p>
+
+<div id="outline-container-org68a354d" class="outline-2">
+<h2 id="org68a354d"><span class="section-number-2">1</span> World Wide Web</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+World Wide Web（ワールド・ワイド・ウェブ、略名：WWW）とは、インターネッ
+ト上で提供されているハイパーテキストシステムである。
+</p>
+
+<p>
+俗には「インターネット」という表現がワールド・ワイド・ウェブを指す場合
+もある。
+</p>
+</div>
+
+<div id="outline-container-org1eda403" class="outline-3">
+<h3 id="org1eda403"><span class="section-number-3">1.1</span> 概要</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>ドキュメント（ウェブページ）の記述には主にHTMLやXHTMLといったハイパー
+テキストの記述言語が使用される。</li>
+
+<li>ハイパーテキストとは、文書中に別の文書のURLへの参照を埋め込むことで
+（これをハイパーリンクと呼ぶ）インターネット上に散在する文書同士を相
+互に参照可能にするシステムである。</li>
+
+<li>閲覧者は表示している文書中でハイパーリンクが付された箇所をクリックや
+タップなどする事でハイパーリンク先の文書を表示させることができる。</li>
+
+<li>ワールドワイドウェブにアクセスするためのソフトウェア（ユーザーエージェ
+ント）は WWW クライアントと呼ばれる。そのうち、利用者による閲覧を目
+的としたものは特にウェブブラウザ（WWW ブラウザ、あるいは単にブラウザ）
+と呼ばれる。</li>
+
+<li>また、ワールドワイドウェブのサービスを提供するソフトウェアを「WWWサー
+バソフトウェア」あるいは単に「ウェブサーバ」という。</li>
+
+<li>ポータル検索エンジンとウェブディレクトリの出現により、ワールドワイド
+ウェブは徐々にその真価を発揮し始めた。
+
+<ul class="org-ul">
+<li>数学的な理論に基礎付けられたウェブページの順位決定法を実用化</li>
+<li>検索エンジンの首座は一気呵成に確定した。</li>
+
+<li>それとは対照的に、すべての分野に亘って個々の事例の
+集積を要するウェブディレクトリの作成は、継続的で地道な作業によって成
+し遂げられる辞書の編纂と似ている。前者が数学的手法に依存しているのに
+対し、後者は分類学的手法によっている点が対照的である。</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1bc5877" class="outline-2">
+<h2 id="org1bc5877"><span class="section-number-2">2</span> HyperText</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+プログラムが参照可能な HyperLink を埋め込んだ文章のこと。
+</p>
+
+<p>
+作者は，HyperLinkで，文書の内外の文書の参照や，プログラムの実行を意
+図する。
+</p>
+
+<p>
+HyperTextを解釈するプログラム (ブラウザ) が存在する。
+</p>
+
+<p>
+読者は，ブラウザで，HyperTextを読む。
+</p>
+
+<p>
+HyperLinkを参照することで，作者が意図した，文書の内外の文書を表示や，
+プログラムの実行を行なう。
+</p>
+
+<p>
+World Wide Web（WWW）における HTML が代表例。
+</p>
+</div>
+
+<div id="outline-container-orgf6a9d34" class="outline-3">
+<h3 id="orgf6a9d34"><span class="section-number-3">2.1</span> HyperLink</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>HyperText 中， ブラウザによって解釈される文字列のこと。</li>
+
+<li>HyperText を解釈表示するプログラムが存在し，そのプログラムがリンクを参
+照することで，作者が意図する行為がなされる。</li>
+
+<li>ハイパーリンク（Hyperlink）とは、ハイパーテキストにおいて、
+複数の文書を結び付ける役割を担う「参照」である。</li>
+
+<li>ハイパーテキストの根幹をなす。</li>
+
+<li>単に「リンク」とも呼ばれる。</li>
+
+<li>World Wide Web（WWW）における Uniform Resource Locator（URL）が代表例。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8f97561" class="outline-3">
+<h3 id="org8f97561"><span class="section-number-3">2.2</span> HTMLによるハイパーリンク</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+HyperText Markup Language（HTML）では、次の様
+にa要素（アンカー要素）を用いる
+</p>
+
+<p>
+&lt;a href="<a href="http://ja.wikipedia.org/">http://ja.wikipedia.org/</a>"&gt;Wikipedia&lt;/a&gt;
+</p>
+
+<p>
+以上の記述によって、以下の様なリンクが生成される。
+</p>
+
+<p>
+<a href="http://ja.wikipedia.org/">Wikipedia</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2c4dae3" class="outline-3">
+<h3 id="org2c4dae3"><span class="section-number-3">2.3</span> 読み物</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li><a href="http://gigazine.net/news/20150826-50-years-hypertext/">ウェブの根幹を成す「ハイパーテキスト」が誕生してから50年が経過、単語を生み出したテッド・ネルソンがその秘密を語る - GIGAZINE</a></li>
+
+<li><a href="http://gigazine.net/news/20140313-ama-tim-berners-lee/">Webの考案者ティム・バーナーズ＝リーが「質問ある？」と掲示板に降臨して次々と回答 - GIGAZINE</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org09694aa" class="outline-2">
+<h2 id="org09694aa"><span class="section-number-2">3</span> markup とは</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<a href="https://mynavi-creator.jp/blog/article/what-is-mark-up">マークアップとは - Markupの意味と基本知識 | マイナビクリエイター</a>
+</p>
+
+<ul class="org-ul">
+<li>文書構造（テキスト）や視覚表現（装飾）などの情報を、</li>
+<li><b>読者</b> やコンピューターが正しく認識できるように、</li>
+<li>タイトルや見出しなどの各構成要素に「タグ」と呼ばれる識別のための目印を使い、</li>
+<li><b>意味付け</b> を行っていくことを意味します。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbc5b287" class="outline-2">
+<h2 id="orgbc5b287"><span class="section-number-2">4</span> markdown とは</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+手軽な方法でマークアップすること。
+見出し，段落，箇条書きなどを簡単に書く。
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: m</p>
+<p class="date">Created: 2018-12-09 日 07:19</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

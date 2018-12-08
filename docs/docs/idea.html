@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-12-09 日 07:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="m" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org23b8c2d">1. ビジネスに役立つ！『アイデアの作り方』まとめ。5つのステップでアイデア作成！</a></li>
+<li><a href="#org9774de0">2. アイデアって作ろうと思って作れるの？</a>
+<ul>
+<li><a href="#org85d2996">2.1. アイデアの作成はフォード車の製造過程と同じように一定の明確な過程である</a></li>
+</ul>
+</li>
+<li><a href="#org828cbc3">3. アイデアの作り方を学ぶ上で重要なこと</a>
+<ul>
+<li><a href="#org1404125">3.1. どんな技術を習得する場合にも、学ぶべき大切なことはまず第一に原理であり第二に方法</a></li>
+</ul>
+</li>
+<li><a href="#orgf89e85b">4. そもそもアイデアって何？</a></li>
+<li><a href="#org69fff92">5. どうしたら新しい切り口を見つけられるか？</a>
+<ul>
+<li><a href="#orgbde5063">5.1. ステップ1 資料集め　-一般的資料と特殊資料-</a></li>
+<li><a href="#orgc537a4b">5.2. ステップ2 心の消化過程</a></li>
+<li><a href="#org1ea816a">5.3. ステップ3 あえて心の外に置く</a></li>
+<li><a href="#org5361171">5.4. ステップ4 常にそれを考える</a></li>
+<li><a href="#org0e140a2">5.5. ステップ5 具体化し、現実の有用性に合致させる</a></li>
+</ul>
+</li>
+<li><a href="#org04b93b0">6. まとめ</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org23b8c2d" class="outline-2">
+<h2 id="org23b8c2d"><span class="section-number-2">1</span> <a href="file:///odai/2135860852966383101">ビジネスに役立つ！『アイデアの作り方』まとめ。5つのステップでアイデア作成！</a></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="http://www.amazon.co.jp/%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2%E3%81%AE%E3%81%A4%E3%81%8F%E3%82%8A%E6%96%B9-%E3%82%B8%E3%82%A7%E3%83%BC%E3%83%A0%E3%82%B9-W-%E3%83%A4%E3%83%B3%E3%82%B0/dp/4484881047">アイデアのつくり方: ジェームス W.ヤング, 竹内 均, 今井 茂雄: 本</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9774de0" class="outline-2">
+<h2 id="org9774de0"><span class="section-number-2">2</span> アイデアって作ろうと思って作れるの？</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org85d2996" class="outline-3">
+<h3 id="org85d2996"><span class="section-number-3">2.1</span> アイデアの作成はフォード車の製造過程と同じように一定の明確な過程である</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li><b>アイデア</b> と聞くと、思いつきやひらめきのようなもの、一部のセン
+スのある人だけの特権、と思いがちです。しかし</li>
+
+<li><p>
+*アイデア*にも生み出す手順があり、
+</p>
+
+<p>
+それを守れば誰だってアイデアが出せるようになります。
+</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org828cbc3" class="outline-2">
+<h2 id="org828cbc3"><span class="section-number-2">3</span> アイデアの作り方を学ぶ上で重要なこと</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org1404125" class="outline-3">
+<h3 id="org1404125"><span class="section-number-3">3.1</span> どんな技術を習得する場合にも、学ぶべき大切なことはまず第一に原理であり第二に方法</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>原理</li>
+<li>方法</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf89e85b" class="outline-2">
+<h2 id="orgf89e85b"><span class="section-number-2">4</span> そもそもアイデアって何？</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+アイデアとは既存の要素の新しい組み合わせ
+</p>
+
+<ul class="org-ul">
+<li><p>
+アイデアは、全くのゼロから生み出されるものではなく、今までにない切り
+口で既存のものを組み合わせることです。
+</p>
+
+<p>
+例えば、「iPhoneの例で言えば、全く新しい物が発明され、イノベーショ
+ンが起こった」と思われがちですが、これも「音楽プレイヤー×電話×PC」
+を新しい切り口で組み合わせた物と見ることができます。
+</p></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org69fff92" class="outline-2">
+<h2 id="org69fff92"><span class="section-number-2">5</span> どうしたら新しい切り口を見つけられるか？</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+アイデアを生み出すステップは、以下の5つの過程であると説明されています。
+</p>
+
+<ol class="org-ol">
+<li>資料集め　-一般的資料と特殊資料-</li>
+
+<li>心の消化過程</li>
+
+<li>あえて心の外に置く</li>
+
+<li>常にそれを考える</li>
+
+<li>具体化し、現実の有用性に合致させる</li>
+</ol>
+</div>
+
+<div id="outline-container-orgbde5063" class="outline-3">
+<h3 id="orgbde5063"><span class="section-number-3">5.1</span> ステップ1 資料集め　-一般的資料と特殊資料-</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+アイデアを作るにあたって、まず資料の収集から入ります。
+本書では、広告のアイデア作成を例に説明されています。
+</p>
+
+<p>
+一般的資料とは、直接企画とは関係のない資料を指しています。本書では、
+エジプトの埋葬習慣からモダンアートに至るまで、幅広くあらゆることに
+興味を持つことを勧めています。
+</p>
+
+<p>
+特殊資料とは、宣伝したい製品と、それを買ってほしい人々に関する資料です。
+</p>
+
+<p>
+製品の研究レポートや販売レポート、ターゲットとする人々の属性や行動
+についてのレポートがこれにあたります。
+</p>
+
+<p>
+これらのデータやレポートを大量に参照することにより、インプットを蓄え、
+新しい関連性を見つけ出す土台になります。
+</p>
+
+<p>
+一般的資料と特殊資料で得た知識を組み合わせ、新しい切り口を見つけ出そう！
+という目論みです。
+</p>
+
+<p>
+本書では、石鹸のマーケティングを例に、髪や皮膚に与える石鹸の影響の研究
+結果が、その後のキャッチコピーやプロモーション企画に大きく貢献した事例
+を挙げています。
+</p>
+
+<p>
+補足ですが、データを元に生まれたアイデアは根拠がしっかりしており、成功
+する確率が高いばかりでなく、仕事を進める上で説明しやすい・説得しやすい
+というメリットもあります。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc537a4b" class="outline-3">
+<h3 id="orgc537a4b"><span class="section-number-3">5.2</span> ステップ2 心の消化過程</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+"探しているのは関係"
+</p>
+
+<p>
+資料を集めたら、それを吸収する過程に入ります。
+</p>
+
+<p>
+ただ資料を読むのではなく、いろいろな事実を並べて見たり、新しい組み合わ
+せ試してみるといいでしょう。
+</p>
+
+<p>
+必要なのはあくまで新しい切り口を探すことであり、資料を暗記することではありません。
+</p>
+
+<p>
+この段階を通っていると、ちょっとしたアイデアが思いつき始めます。
+それは些細なものであることが多いのですが、逐一メモに残すことを推奨しています。
+思いついたものを言葉にすることで、自分の中でアイデアが整理され、この後の過程が加速されます。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1ea816a" class="outline-3">
+<h3 id="org1ea816a"><span class="section-number-3">5.3</span> ステップ3 あえて心の外に置く</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+"問題を意識の外に移し、無意識の創造過程を刺激する"
+</p>
+
+<p>
+ここまで、資料を集めて吸収するという作業をしてきました。
+しかしそれはしばしば退屈で苦痛なものでもあります。
+</p>
+
+<p>
+そうなったときは、一度問題を心の外に追いやってしまいましょう。
+</p>
+
+<p>
+好きな音楽を聞いたり、映画を見たり。
+</p>
+
+<p>
+問題を放棄して、自分の想像力や感情を刺激してくれるものに触れましょう。
+</p>
+
+<p>
+"第一の段階で諸君は食料をあつめた。第二の段階ではそれを十分咀嚼した。
+いまや消化過程がはじまった"
+</p>
+
+<p>
+"ただし胃液の分泌を刺激すること"
+</p>
+
+<p>
+刺激を与えることでケミストリーが起こり、頭の中でアイデアの生成が加速されます。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5361171" class="outline-3">
+<h3 id="org5361171"><span class="section-number-3">5.4</span> ステップ4 常にそれを考える</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+"どこからもアイデアは現れてこない"
+</p>
+
+<p>
+ステップ3までを経験して思うこと。「アイデアが生まれて来ない！」。あな
+たは焦りを感じるかもしれません。無力感に陥るかもしれません。それでも、
+辛抱強く、生み出すべきアイデアについて考えましょう。頭のカタスミで常に
+考えることで、それは確実に整理されていきます。
+</p>
+
+<p>
+"アイデアの訪れてくるとき"
+</p>
+
+<p>
+TBSブリタニカ 『アイデアのつくり方』 P.51より
+</p>
+
+<p>
+休息とくつろぎのひとときにそれは突然やってきます。
+</p>
+
+<p>
+往々にして、アイデアがひらめくときというのは、緊張をといてリラックスしているときです。
+朝ひげを剃っているとき、シャワーを浴びているときに思いつくのです。
+</p>
+
+<p>
+上で挙げたプロセスを経て、常に考えることで自分の中で整理されていき、緊
+張から解かれた瞬間にふっとひらめくのです。
+</p>
+
+<p>
+金曜日に行きずまっている仕事があったけど、土日に思いっきり遊んだら月曜
+の朝にいきなり解決案が思いついた！なんて経験はありませんか？
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0e140a2" class="outline-3">
+<h3 id="org0e140a2"><span class="section-number-3">5.5</span> ステップ5 具体化し、現実の有用性に合致させる</h3>
+<div class="outline-text-3" id="text-5-5">
+<p>
+この段階は、ステップ4で生まれたアイデアを現実の世界に連れ出すためのも
+のです。思いついたアイデアは、そのままでは使い物にならないことも多いで
+す。
+</p>
+
+<p>
+生み出したアイデアが現実の世界に適用できるよう、細部を落とし込み、辛抱
+強く作りあげて行きましょう。せっかくアイデアを思いついても、この段階で
+諦めてしまうと、陽の目を見ることがなくなってしまいます。
+</p>
+
+<p>
+過酷な作業ではありますが、この過程がアイデアに命を吹き込むものだと思っ
+て、乗り越えましょう。多くの場合、あなたのアイデアはきっと誰かの役に立
+つものなのですから。
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org04b93b0" class="outline-2">
+<h2 id="org04b93b0"><span class="section-number-2">6</span> まとめ</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+これらのステップは、いざ実行しようとすると困難な知能労働をこなす必要が
+あり、なかなか実行に移せなかったりします。
+</p>
+
+<p>
+ただ、やり続けた人とやらなかった人とでは大きな差が開くことは間違いあり
+ません。
+</p>
+
+<p>
+最初は大変だと思いますが、こなすうちに慣れていき、全てのプロセスを経る
+のに必要な時間も短くなっていくはずです。そうなればしめたものです。
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: m</p>
+<p class="date">Created: 2018-12-09 日 07:19</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

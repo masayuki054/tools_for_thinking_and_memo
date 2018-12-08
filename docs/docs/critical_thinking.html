@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-12-09 日 07:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="m" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgf5e3a46">1. 批判的思考</a>
+<ul>
+<li><a href="#org410b207">1.1. 講義で紹介する</a></li>
+<li><a href="#org9939052">1.2. 関連サイト</a></li>
+<li><a href="#org4638041">1.3. 批判的思考について</a>
+<ul>
+<li><a href="#org8c1093b">1.3.1. 動機</a></li>
+<li><a href="#org5a76661">1.3.2. 良き市民のための批判的思考 (原著）</a></li>
+<li><a href="#orge5f854b">1.3.3. 批判的思考とは（参考にしたサイトとまとめ)</a></li>
+<li><a href="#orgccddd32">1.3.4. 良き市民のための批判的思考 (まとめ）</a></li>
+<li><a href="#org2139b87">1.3.5. 良き市民のための批判的思考に対する自分の考え</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf5e3a46" class="outline-2">
+<h2 id="orgf5e3a46"><span class="section-number-2">1</span> 批判的思考</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org410b207" class="outline-3">
+<h3 id="org410b207"><span class="section-number-3">1.1</span> 講義で紹介する</h3>
+<div class="outline-text-3" id="text-1-1">
+<ol class="org-ol">
+<li>関連サイト紹介</li>
+<li><a href="#orgccddd32">1.3.4</a></li>
+<li><a href="#org2139b87">1.3.5</a></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9939052" class="outline-3">
+<h3 id="org9939052"><span class="section-number-3">1.2</span> 関連サイト</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+批判的思考
+<a href="http://www.educ.kyoto-u.ac.jp/cogpsy/personal/Kusumi/hihan.htm">http://www.educ.kyoto-u.ac.jp/cogpsy/personal/Kusumi/hihan.htm</a>
+</p>
+
+<p>
+良き市民のための 批判的思考 - 日本心理学会
+<a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=5&amp;ved=0CFIQFjAE&amp;url=http://www.psych.or.jp/publication/worold_pdf/61/61-5-8.pdf&amp;ei=s-iSUpCfLYXMkQW0gIHQAQ&amp;usg=AFQjCNF2otqcdNRl2uU1aQb2hYXQ1t0I0g&amp;sig2=2brut6KaJ1kC4ZNpBD4xyQ&amp;bvm=bv.56988011,d.dGI">http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=5&amp;ved=0CFIQFjAE&amp;url=http://www.psych.or.jp/publication/worold_pdf/61/61-5-8.pdf&amp;ei=s-iSUpCfLYXMkQW0gIHQAQ&amp;usg=AFQjCNF2otqcdNRl2uU1aQb2hYXQ1t0I0g&amp;sig2=2brut6KaJ1kC4ZNpBD4xyQ&amp;bvm=bv.56988011,d.dGI</a>
+</p>
+
+<p>
+問いかけることで，批判的で創造的な思考を養う
+<a href="http://www.edu.hyogo-u.ac.jp/miyahiro/chinotubasa.html">http://www.edu.hyogo-u.ac.jp/miyahiro/chinotubasa.html</a>
+</p>
+
+<p>
+What is critical reading — University of Leicester
+<a href="http://www2.le.ac.uk/offices/ld/resources/writing/writing-resources/critical-reading">http://www2.le.ac.uk/offices/ld/resources/writing/writing-resources/critical-reading</a>
+</p>
+
+<p>
+What Is Critical Reading?
+<a href="http://www.criticalreading.com/critical_reading.htm">http://www.criticalreading.com/critical_reading.htm</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4638041" class="outline-3">
+<h3 id="org4638041"><span class="section-number-3">1.3</span> 批判的思考について</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org8c1093b" class="outline-4">
+<h4 id="org8c1093b"><span class="section-number-4">1.3.1</span> 動機</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+情報の量が多く早く変化する時代，自分だけの考えにとらわれない，人の考
+えをやみくもに受け入れない，柔軟な考え方を手に入れたいと思っている。
+</p>
+
+<p>
+批判的思考はそんな思いにヒントを与えてくれそうに思った。
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org5a76661" class="outline-4">
+<h4 id="org5a76661"><span class="section-number-4">1.3.2</span> 良き市民のための批判的思考 (原著）</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<dl class="org-dl">
+<dt>サイト</dt><dd><a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=5&amp;ved=0CFIQFjAE&amp;url=http://www.psych.or.jp/publication/worold_pdf/61/61-5-8.pdf&amp;ei=s-iSUpCfLYXMkQW0gIHQAQ&amp;usg=AFQjCNF2otqcdNRl2uU1aQb2hYXQ1t0I0g&amp;sig2=2brut6KaJ1kC4ZNpBD4xyQ&amp;bvm=bv.56988011,d.dGI">良き市民のための批判的思考</a></dd>
+<dt>著者</dt><dd>京都大学大学院教育学研究科教授   楠見　孝</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-orge5f854b" class="outline-4">
+<h4 id="orge5f854b"><span class="section-number-4">1.3.3</span> 批判的思考とは（参考にしたサイトとまとめ)</h4>
+<div class="outline-text-4" id="text-1-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="org6b8865c"></a><a href="http://ja.wikipedia.org/wiki/%E6%89%B9%E5%88%A4%E7%9A%84%E6%80%9D%E8%80%83">批判的思考-Wikipedia</a><br /></li>
+
+<li><a id="org338a0b0"></a><a href="http://www.educ.kyoto-u.ac.jp/cogpsy/personal/Kusumi/hihan.htm">批判的思考-楠見</a> のまとめ<br />
+<ol class="org-ol">
+<li><a id="orgabd3dc2"></a>定義<br />
+<div class="outline-text-6" id="text-1-3-3-2-1">
+<p>
+批判的思考は, 
+</p>
+<ul class="org-ul">
+<li>推論の規準(criteria)にしたがう，論理的で偏りのない思考である。</li>
+</ul>
+
+<p>
+批判的思考は, 
+</p>
+<ul class="org-ul">
+<li>人の話を聞いたり，文章を読んだり,議論をしたり，自分の考えを述べ
+る時に目標指向的に働く。</li>
+
+<li>したがって，日常語である“相手を批判する”思考という狭い意味では
+ない。</li>
+
+<li>むしろ，自分の推論過程を意識的に吟味する反省的な思考であり，何を
+信じ，主張し，行動するかの決定に焦点を当てる思考である。</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org565b4f5"></a>批判的思考の構成要素<br />
+<div class="outline-text-6" id="text-1-3-3-2-2">
+<p>
+批判的思考の能力（評価の規準でもある）は，つぎのように分けることができる。
+</p>
+
+<dl class="org-dl">
+<dt>基礎的な明確化</dt><dd>明確化のための基礎的能力としては，
+
+<ul class="org-ul">
+<li>1)焦点化によって，問題，仮説，主題を明確化すること，</li>
+
+<li>2)論証を分析すること(構造，結論，理由など)，</li>
+
+<li>3)明確化のための疑問(なぜ？　なにが重要か？事例は？など)を提起すること－－がある。</li>
+</ul></dd>
+
+<dt>推論の基盤の検討</dt><dd>推論を支える情報源としては，他者の主張，観察，以
+前におこなった推論の結論がある。そこで，
+
+<ol class="org-ol">
+<li>情報源の信頼性を判断したり (例：専門家によるものか？　情報源間一致
+度は？　確立した手続きをとっているか？)，</li>
+
+<li>観察や観察報告を評価する能力が必要である。</li>
+</ol></dd>
+
+<dt>推論</dt><dd>推論には，演繹の判断(クラス論理学，条件式，命題の解釈など)，
+帰納の判断，価値判断(背景事実，結果，選択肢，バランス，ウエイ
+ト，決定などの判断)の能力が関わる。帰納における判断には，
+
+<ol class="org-ol">
+<li>一般化(データの典型性，網羅範囲の限界，サンプリング)の能力と，</li>
+
+<li>探索的な結論や仮説を推論する能力がある。後者には，調査(証拠と反証，
+説明の探索)をしたり，仮説や結論の合理性を規準(事実の説明における無
+矛盾性，もっともらしさなど)にてらして判断することを含む。</li>
+</ol></dd>
+
+<dt>推論後の明確化</dt><dd><p>
+推論後の明確化には，
+</p>
+
+<ul class="org-ul">
+<li>1)名辞や定義(同義・分類・範囲
+などの形式，定義の方法，多義の同定と扱い，内容など)を判断する能力と，</li>
+<li>2)(複数の論証を検討，精緻化することによって)仮説を同定する能力が関わ</li>
+</ul>
+<p>
+る。
+</p></dd>
+
+<dt>方略</dt><dd>批判的思考の最終段階として，行為の決定(問題の定義，解決の判断
+のための規準の選択，他の解決策の形成，何をすべきかの仮の決定，
+状況全体を考慮した上での再吟味，実現のモニターなど)がある。こ
+れらはメタ認知的活動である。一方，他者との相互作用を，議論，
+発表，論文などを通しておこなうことも大切である。ここには，こ
+れまで述べてきた(a)-(d)のすべての能力が関わる。</dd>
+</dl>
+
+
+<p>
+批判的思考は，(a)-(e)で述べてきた能力だけでは，十分に発揮されない。態度（傾向性）が，問題解決や読解，討論などの状況において必要である。
+</p>
+
+<p>
+批判的思考者がもつ態度（傾向性）には，下記のものがある:
+</p>
+
+<ol class="org-ol">
+<li>明確な主張や理由を求めること</li>
+<li>信頼できる情報源を利用すること</li>
+<li>状況全体を考慮する，重要なもとの問題とずれないようにする</li>
+<li>複数の選択肢を探す</li>
+<li>開かれた心をもつ(対話的思考，仮定に基づく思考など)</li>
+<li>証拠や理由に立脚した立場をとる</li>
+</ol>
+</div>
+</li>
+
+<li><a id="orgba02f5f"></a>批判的思考力の育成<br />
+<div class="outline-text-6" id="text-1-3-3-2-3">
+<p>
+批判的思考力を教える目的は, 学習者を良き思考者(good thinker)や市民に育
+てることである。
+</p>
+
+<p>
+批判的思考力育成には, ディベート, 課題研究, インターネットを利用した調
+べ学習も関わる。
+</p>
+
+<p>
+批判的思考力は, 学習スキル/方略, 情報活用能力の育成においても重要である。
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgccddd32" class="outline-4">
+<h4 id="orgccddd32"><span class="section-number-4">1.3.4</span> 良き市民のための批判的思考 (まとめ）</h4>
+<div class="outline-text-4" id="text-1-3-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgbfbeed4"></a>批判的思考とは相手を非難すること？<br />
+<ol class="org-ol">
+<li><a id="orgc09b9dd"></a>批判的思考において大切なこと<br />
+<div class="outline-text-6" id="text-1-3-4-1-1">
+<ol class="org-ol">
+<li>相手の発言に耳を傾け，証拠や論理，感情を的確に解釈すること，</li>
+
+<li>自分の考えに誤りや偏りがないかを振り返ることである。</li>
+</ol>
+
+<p>
+相手の発言に耳を傾けずに挙げ足を取ることは批判的な思考と正反対のことがらである。
+</p>
+</div>
+</li>
+
+<li><a id="org3389595"></a>批判的思考（クリティカルシンキング）の定義<br />
+<div class="outline-text-6" id="text-1-3-4-1-2">
+<ol class="org-ol">
+<li>証拠に基づく論理的で偏りのない思考</li>
+
+<li>自分の思考過程を意識的に吟味する省察的（リフレクティブ）で熟慮的思考</li>
+
+<li>より良い思考を行うために目標や文脈に応じて実行される目標指向的な思考</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org5aaf095"></a>批判的思考の例<br />
+<div class="outline-text-6" id="text-1-3-4-1-3">
+<p>
+批判的思考は，学業，職業など幅広い場面で働く汎用的（ジェネリック）スキ
+ルでもある。
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orga3d6a40"></a>学習者，研究者<br />
+<div class="outline-text-7" id="text-1-3-4-1-3-1">
+<p>
+批判的に読む・聞く（情報収集），話す（討論やプレゼンテーション），書く
+（レポートや論文）ことを行っている。
+</p>
+
+<p>
+学問・研究のために必要なコミュニケーション能力（学問・研究リテラシー）
+を支えるスキルである。
+</p>
+
+<p>
+大学の初年次教育で重視されるようになってきた。
+</p>
+</div>
+</li>
+
+<li><a id="org09b2194"></a>日常生活や職業生活においては，<br />
+<div class="outline-text-7" id="text-1-3-4-1-3-2">
+<p>
+テレビを見る，広告に接する，インターネットで情報を集める，決定する時な
+どに批判的思考は働いている。
+</p>
+
+<p>
+情報を鵜呑みにせず立ち止まって考える批判的思考は，市民としての生活に必
+要なコミュニケーション能力（市民リテラシー）を支えている。
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+
+<li><a id="orgd4f76a2"></a>批判的思考のプロセスは？<br />
+<ol class="org-ol">
+<li><a id="org3fa82f7"></a>四つの段階<br />
+<div class="outline-text-6" id="text-1-3-4-2-1">
+<ol class="org-ol">
+<li>情報を明確化する（報道，発言，書籍などの主張とそれを支える根拠を正し
+くとらえる）</li>
+
+<li>推論をするための土台を検討する（隠れた前提を明らかにしたり，主張が信
+頼できる証拠に基づいているかを検討する），</li>
+
+<li>推論を行う（演繹・帰納・価値判断によって，偏りのない結論を論理的に
+導く），</li>
+
+<li>意思決定や問題解決をする。</li>
+</ol>
+</div>
+</li>
+
+<li><a id="org2690bc6"></a>メタ認知プロセス<br />
+<div class="outline-text-6" id="text-1-3-4-2-2">
+<p>
+これら四つに加えて，1から4が正しく行われているかを振り返り（モニター），
+コントロールするのが1 段階高いレベルにあるメタ認知プロセスである。
+</p>
+
+<p>
+メタ認知プロセスは，目標に照らして批判的思考を実行するかどうかの判断も
+している（田中・楠見，2007）。
+</p>
+</div>
+</li>
+
+<li><a id="orge217ea6"></a>批判的思考態度<br />
+<div class="outline-text-6" id="text-1-3-4-2-3">
+<p>
+さらに，こうした批判的思考のプロセスを土台から支えているのが，批判的に
+考えようとする態度である。
+</p>
+
+<p>
+批判的思考態度には，
+</p>
+
+<ol class="org-ol">
+<li>論理的に考えようとすること，</li>
+<li>証拠に基づいて考えようとすること，</li>
+<li>多くの情報を探究しようとすること，</li>
+<li>偏見や先入観にとらわれず客観的に考えようとすること（平山・楠見,
+2004），</li>
+<li>そしてこれらすべてに関わる，熟慮することがある。</li>
+</ol>
+</div>
+</li>
+</ol>
+</li>
+
+
+<li><a id="org250de66"></a>今なぜ批判的思考が必要とされるのか？<br />
+<ol class="org-ol">
+<li><a id="orgcb67b23"></a>第1. 市民に批判的思考が求められている<br />
+<div class="outline-text-6" id="text-1-3-4-3-1">
+<p>
+市民はテレビや新聞をはじめ，インターネット，家族，友人などを通して，さ
+まざまな情報の中で，信頼できる情報を判断して行動をする必要がある。
+</p>
+
+<ul class="org-ul">
+<li>とくに東日本大震災以後，低線量の放射能による健康影響に関しては，批判
+的思考と知識によって，リスクに立ち向かい，リスクを減らす適切な行動を
+し，科学的根拠のない偏見や差別をなくすことが必要である。</li>
+
+<li>また，今後の日本のエネルギー問題を考える際にも，一人ひとりがさまざま
+な情報を批判的に吟味して判断することが大切である。</li>
+</ul>
+
+<p>
+楠見・三浦・小倉（2012）は，東日本大震災の原発事故による放射線リスク情
+報の理解に批判的思考態度がどのように影響するかについて，被災県，首都圏，
+関西圏の計1752 人の一般市民を対象に，震災半年後と1 年後にネット調査を行っ
+た。その結果，批判的思考態度はメディアリテラシーを向上させることを通し
+て，知識や自発的な情報収集を促進し，リスク対処行動に影響を及ぼしていた
+ことがわかった。
+</p>
+</div>
+</li>
+
+<li><a id="orgc1aba99"></a>第2  社会で働く人に批判的思考が求められている<br />
+<div class="outline-text-6" id="text-1-3-4-3-2">
+<p>
+急速に変化する社会や経済の状況に対応するため
+</p>
+
+<p>
+単なる知識だけではなくて，批判的思考能力を中核とした，論理的思考力，コ
+ミュニケーション能力をもつ人材が求められるようになってきている。
+</p>
+
+<p>
+学士力には，次の四つが挙げられている: 
+</p>
+
+<ol class="org-ol">
+<li>知識・理解，</li>
+<li>汎用的スキル（論理的思考力，コミュニケーションスキル，情報リテラシーなど），</li>
+<li>態度・志向性，</li>
+<li>統合的な学習経験と創造的思考力</li>
+</ol>
+
+<p>
+批判的思考は，汎用的スキルの中核となり，他の三つにも関わる。
+</p>
+</div>
+</li>
+
+<li><a id="org904579b"></a>第3. 学習者に批判的思考が求められるようになった<br />
+<div class="outline-text-6" id="text-1-3-4-3-3">
+<ul class="org-ul">
+<li>大学生への学習スキル教育の重要性が高まった。</li>
+
+<li>専門教育においても，高度の知識やスキルを土台にした批判的思考力をもっ
+た専門家の育成が重視される</li>
+
+<li>すべての子どもに，課題解決のために自ら考え・判断・行動できる，社会を
+生き抜く力を育成する</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="org65d60d3"></a>良き市民による幸せな社会とは？<br />
+<ol class="org-ol">
+<li><a id="org8bde13e"></a>批判的思考能力をもった良き市民を育てること<br /></li>
+
+<li><a id="org64d8885"></a>批判的に考えるリーダーや専門家を育成する<br /></li>
+
+<li><a id="orgcdd8873"></a>批判的コミュニティをつくること<br />
+<div class="outline-text-6" id="text-1-3-4-4-3">
+<p>
+しかし，個人レベルでも，社会レベルでも批判的思考を実行することが難しい
+ことは事実である。
+</p>
+
+<ul class="org-ul">
+<li>日本の社会では目上の人や仲間に対して批判的思考に基づく発言をしにくい
+のが現状である。</li>
+</ul>
+
+<p>
+そうした中で必要なことは，まずは身近な家族，学校，職場，地域，ネットと
+いったコミュニティにおいて，じっくり考え，対話ができる場（批判的コミュ
+ニティ）をつくることである。
+</p>
+
+<ul class="org-ul">
+<li>そのためには，必要な情報を自分自身で集め，人に正確に伝え，人の意見に
+耳を傾けることが重要である。</li>
+
+<li>こうしたコミュニティは社会的問題解決の実践の場である。自分の住むコミュ
+ニティにおける意見や利害関係の対立は，批判的思考のスキルを用いて，相
+手も自分も満足させるような解決を導くことが理想である。</li>
+
+<li>とくに，自分のもつ認知バイアスを自覚し，多角的な視点で物事を見ること
+によって，異なる価値観や視点を理解する姿勢が大事である。</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org0372e3e"></a>人生そして社会の問題を協同解決<br />
+<div class="outline-text-6" id="text-1-3-4-4-4">
+<p>
+批判的に考える良き市民が，人生そして社会の問題を協同して解決し，幸せな
+人生とより良い社会を築くことができるようになることは一つの理想である。
+そのために，心理学者が，批判的思考に関する研究と教育において果たす役割
+は大きいと考えている。
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+
+
+<div id="outline-container-org2139b87" class="outline-4">
+<h4 id="org2139b87"><span class="section-number-4">1.3.5</span> 良き市民のための批判的思考に対する自分の考え</h4>
+<div class="outline-text-4" id="text-1-3-5">
+<p>
+以下の点について改めて認識させられた
+</p>
+
+<ul class="org-ul">
+<li>態度として，メタ認知活動が最も重要であること
+
+<ul class="org-ul">
+<li>曖昧な思考活動を，部分や部品に分けて考えること</li>
+<li>自分の考えを第三者的に捉えられること</li>
+</ul></li>
+
+<li>常に，論理的に考え，判断することを意識する</li>
+</ul>
+
+<p>
+協同的批判的コミュニティを形成する難しさについて考えさせられた
+</p>
+
+<ul class="org-ul">
+<li>他者を信じること？</li>
+
+<li>他者の考え方を知ること？</li>
+</ul>
+
+<p>
+批判的思考のための道具として，
+</p>
+
+<ul class="org-ul">
+<li>いまのところ，アウトラインプロセッサがいいと思う
+
+<ul class="org-ul">
+<li>論理的なまとめとレベルが扱える</li>
+<li>論理的な流れが書ける</li>
+<li>関係が書けると嬉しいが，今はできないかな</li>
+</ul></li>
+</ul>
+
+<p>
+論理だけでなくプロセス（時間経過と考えの変化）も大切なのでは？
+</p>
+
+<ul class="org-ul">
+<li>論理はスムーズに（一次元的な流れ，文章で）記述できるが，</li>
+
+<li>時間経過による考え方の変化や進化を（関係図で）記述する方法は？</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: m</p>
+<p class="date">Created: 2018-12-09 日 07:18</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

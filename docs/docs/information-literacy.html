@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-12-09 日 07:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="m" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org6daa506">1. 新説 情報リテラシの章立て</a>
+<ul>
+<li><a href="#orga9fb475">1.1. 序</a>
+<ul>
+<li><a href="#orgde90ee9">1.1.1. 情報を活用する創造的能力</a></li>
+</ul>
+</li>
+<li><a href="#orga6249df">1.2. I部 情報リテラシの現状</a>
+<ul>
+<li><a href="#orge48ae61">1.2.1. 1章 ITへの過剰依存が招いた危惧すべき実情</a></li>
+<li><a href="#orge56d09a">1.2.2. 2章 情報リテラシ教育をとりまく現状</a></li>
+<li><a href="#orgeef4861">1.2.3. 3章 情報リテラシとは何か</a></li>
+</ul>
+</li>
+<li><a href="#orgae36d84">1.3. II部 情報リテラシの体系</a>
+<ul>
+<li><a href="#org92a6ceb">1.3.1. 4章 情報の収集 / 必要となる情報の入手先を探しだし，利用可能なデータを選別する</a></li>
+<li><a href="#org0013c20">1.3.2. 5章 情報の加工 / 情報を加工して意味のある情報に変換する</a></li>
+<li><a href="#org698ef48">1.3.3. 6章 情報の分析 / 情報がもつ本質を理解し，有用な知識を導出する</a></li>
+<li><a href="#org8380ce2">1.3.4. 7章 情報の蓄積 / 学習した知識と既存知識とを結びつけて新たな知識を蓄積する</a></li>
+<li><a href="#org00beadf">1.3.5. 8章 情報の生成 / 得られた知識を説明するための情報を生成する</a></li>
+<li><a href="#orgb578f8b">1.3.6. 9章 情報の発信 / 情報を必要とする利用者を探しだし，生成した情報を発信する</a></li>
+</ul>
+</li>
+<li><a href="#orgf87de41">1.4. III部 情報リテラシの今後</a>
+<ul>
+<li><a href="#org04fa5de">1.4.1. 10章 IT 重視の情報リテラシーは何をのこしたのか</a></li>
+<li><a href="#org8427bb3">1.4.2. 11章 情報リテラシ教育のあるべき姿</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6daa506" class="outline-2">
+<h2 id="org6daa506"><span class="section-number-2">1</span> 新説 情報リテラシの章立て</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="https://www.amazon.co.jp/%E6%96%B0%E8%AA%AC-%E6%83%85%E5%A0%B1%E3%83%AA%E3%83%86%E3%83%A9%E3%82%B7%E3%83%BC%E2%80%95%E3%82%BD%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E6%99%82%E4%BB%A3%E3%82%92%E7%94%9F%E3%81%8D%E6%8A%9C%E3%81%8F%E3%81%9F%E3%82%81%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%B9%E3%82%AD%E3%83%AB-%E6%9D%89%E6%B5%A6-%E5%8F%B8/dp/4862831494">"新説 情報リテラシー―ソーシャル時代を生き抜くための情報スキル | 杉浦司"</a>
+</p>
+
+
+<p>
+ソーシャル時代を生き抜くための情報スキル
+杉浦司
+</p>
+</div>
+
+<div id="outline-container-orga9fb475" class="outline-3">
+<h3 id="orga9fb475"><span class="section-number-3">1.1</span> 序</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgde90ee9" class="outline-4">
+<h4 id="orgde90ee9"><span class="section-number-4">1.1.1</span> 情報を活用する創造的能力</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ul class="org-ul">
+<li>情報の収集</li>
+<li>情報の加工</li>
+<li>情報の分析</li>
+<li>情報の獲得</li>
+<li>情報の生成</li>
+<li>情報の発信</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga6249df" class="outline-3">
+<h3 id="orga6249df"><span class="section-number-3">1.2</span> I部 情報リテラシの現状</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orge48ae61" class="outline-4">
+<h4 id="orge48ae61"><span class="section-number-4">1.2.1</span> 1章 ITへの過剰依存が招いた危惧すべき実情</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org5ce908a"></a>安易なコピペで失う思考力という大きな代償<br /></li>
+
+<li><a id="orgfdea94d"></a>統計学を知らずに ∑ （合計）関数を覚える危険性<br /></li>
+
+<li><a id="org35ab926"></a>見た目だけでグラフの種類を選ぶ愚かしさ<br /></li>
+
+<li><a id="org2e96ed9"></a>身内まで煙に巻いてしまう紙芝居プレゼンテーション<br /></li>
+
+<li><a id="org9eb54ff"></a>自らの人格を破壊するモラル不在の匿名掲示板<br /></li>
+</ol>
+</div>
+
+<div id="outline-container-orge56d09a" class="outline-4">
+<h4 id="orge56d09a"><span class="section-number-4">1.2.2</span> 2章 情報リテラシ教育をとりまく現状</h4>
+<div class="outline-text-4" id="text-1-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org5e6ddad"></a>情報の洪水に流されて自主性をなくした人々<br /></li>
+
+<li><a id="org99e1768"></a>IT 化の進展と引き換えに進む社員の能力低下<br /></li>
+
+<li><a id="org137dbb0"></a>ハウツー重視の知識教育が地アタマ力を使う思考力を失わせる<br /></li>
+</ol>
+</div>
+
+<div id="outline-container-orgeef4861" class="outline-4">
+<h4 id="orgeef4861"><span class="section-number-4">1.2.3</span> 3章 情報リテラシとは何か</h4>
+<div class="outline-text-4" id="text-1-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org3d7f6fc"></a>ITリテラシと情報リテラシとの違い<br />
+<ol class="org-ol">
+<li><a id="orgdc86786"></a>パソコン操作を学ぶ前に文書作成の作法を学べ<br /></li>
+
+<li><a id="org431620a"></a>ITを使いこなす能力と情報を使いこなす能力は別もの<br /></li>
+</ol>
+</li>
+
+<li><a id="org7490a0c"></a>メディア・リテラシと情報リテラシの違い<br /></li>
+
+<li><a id="org7958e65"></a>「読み書き算盤」にみる情報リテラシの原点<br /></li>
+
+<li><a id="org2a6d1a1"></a>データと情報，知識の違いと関係を理解する<br /></li>
+
+<li><a id="org8f11e71"></a>情報リテラシにおける六つの能力領域<br /></li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-orgae36d84" class="outline-3">
+<h3 id="orgae36d84"><span class="section-number-3">1.3</span> II部 情報リテラシの体系</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org92a6ceb" class="outline-4">
+<h4 id="org92a6ceb"><span class="section-number-4">1.3.1</span> 4章 情報の収集 / 必要となる情報の入手先を探しだし，利用可能なデータを選別する</h4>
+<div class="outline-text-4" id="text-1-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org12571e2"></a>極端意見と中間意見を集めて情報収集源の偏りをなくす<br />
+<ol class="org-ol">
+<li><a id="org8b0788d"></a>反対意見がない主流意見は洗練不足<br /></li>
+</ol>
+</li>
+
+<li><a id="org8d5ae6f"></a>情報の鮮度と品質を見極める<br /></li>
+
+<li><a id="org6b748a7"></a>表記ゆれと関連性を意識したキーワード検索<br /></li>
+
+<li><a id="org0ceeb5a"></a>プッシュ型とプル型，熟読型と速読型の使い分け<br /></li>
+
+<li><a id="org35f86a1"></a>質問と確認を駆使して「バカの壁」を突破する<br /></li>
+</ol>
+</div>
+
+
+<div id="outline-container-org0013c20" class="outline-4">
+<h4 id="org0013c20"><span class="section-number-4">1.3.2</span> 5章 情報の加工 / 情報を加工して意味のある情報に変換する</h4>
+<div class="outline-text-4" id="text-1-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org725ab44"></a>下準備 客観的事実と主観的事実を区別する<br />
+<ol class="org-ol">
+<li><a id="org3596878"></a>客観的事実と主観的事実という二つの事実<br /></li>
+
+<li><a id="org604a2c4"></a>飾り付けをはずして客観的事実だけを取り出す<br /></li>
+
+<li><a id="orgd491f8b"></a>極端な主観的事実を除去する<br /></li>
+
+<li><a id="org8e5135e"></a>客観的事実にみえる主観的事実も存在する<br /></li>
+
+<li><a id="orga1707b3"></a>主観的事実の方が客観的事実よりも意義があることも<br /></li>
+</ol>
+</li>
+
+<li><a id="orgb11adb4"></a>情報の 2S (整理整頓）<br />
+<ol class="org-ol">
+<li><a id="orge541946"></a>項目分けは情報整理のための不可欠作業<br /></li>
+
+<li><a id="orge0fd7d4"></a>並べ替えるだけで見えてくる全体の傾向<br /></li>
+
+<li><a id="orgc2cd576"></a>着眼点で様変わりするランキング情報<br /></li>
+
+<li><a id="org664e185"></a>類似性，関連性をあぶり出す分類キーの切り替え<br /></li>
+
+<li><a id="orgb27e4f9"></a>顕著な傾向の背後に隠れた変化に注意する<br /></li>
+
+<li><a id="org088cc86"></a>将来を左右する情報の勢いを見逃さない<br /></li>
+</ol>
+</li>
+
+<li><a id="org53489f3"></a>情報の切り捨て 不要な情報を見極める<br />
+<ol class="org-ol">
+<li><a id="orgfd0ee02"></a>情報は多ければ良いというものではない<br /></li>
+
+<li><a id="orgfe9c399"></a>論理のすり替えやありえない根拠で煙に巻く「詭弁」<br /></li>
+
+<li><a id="orgbdf88f3"></a>正常な思考を妨げる権威というわな<br /></li>
+
+<li><a id="orgf74b5dd"></a>マインドマップによる情報の抽象化<br /></li>
+</ol>
+</li>
+
+<li><a id="org6466fba"></a>情報の埋め合わせ 抜けたピースを探し出す<br />
+<ol class="org-ol">
+<li><a id="org9e2777d"></a>一部分だけを切り出して見せる報道の危険性<br /></li>
+
+<li><a id="org34b04dd"></a>人の人生すら破壊しかねない片面情報<br /></li>
+
+<li><a id="org073b4c7"></a>5W1H で考える情報の完全性と中立立場で考える情報の妥当性<br /></li>
+
+<li><a id="orgdc96645"></a>主語と語尾が曖昧な日本語<br /></li>
+
+<li><a id="orgd4d8a35"></a>因果関係による欠損値の推測<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org698ef48" class="outline-4">
+<h4 id="org698ef48"><span class="section-number-4">1.3.3</span> 6章 情報の分析 / 情報がもつ本質を理解し，有用な知識を導出する</h4>
+<div class="outline-text-4" id="text-1-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="org1afb0f2"></a>見える化テクニックで見えてくる全体像<br />
+<ol class="org-ol">
+<li><a id="org3b73c71"></a>ごまかしや詭弁から身を守る見える化の技術<br /></li>
+
+<li><a id="org269039d"></a>図にして考えるのがモデリングの基本<br /></li>
+
+<li><a id="orgcc98476"></a>Wikiが証明するコメントの視点追加の意義<br /></li>
+</ol>
+</li>
+
+<li><a id="org43036c3"></a>スライス＆ダイス＆ドリルダウンによる視点の切り替えが気づきを与える<br />
+<ol class="org-ol">
+<li><a id="org5c4cd33"></a>定形帳票だけを見ていても気づかない変化が起きている<br /></li>
+
+<li><a id="org4871d4e"></a>時間がかかるデータ分析では急速な状況変化についていけない<br /></li>
+
+<li><a id="orga1a3fb8"></a>ピボットテーブルのクロス集計機能を使いこなす<br /></li>
+
+<li><a id="org6f94cd7"></a>瞬時に視点を切り替えることができる OLAP の魅力<br /></li>
+
+<li><a id="orgb210efc"></a>地図グラフも簡単な手間で作成できる<br /></li>
+</ol>
+</li>
+
+<li><a id="org86f927b"></a>データマイニングとテキストマイニングで浮かび上がる隠れたトレンド<br />
+<ol class="org-ol">
+<li><a id="org77be1de"></a>傾向のアタリを見で確認できる Excel 散布図<br /></li>
+
+<li><a id="orgcf79a2a"></a>複雑で変化が早い現代社会の助けとなる多変量解析<br /></li>
+
+<li><a id="orge5de682"></a>アンケートの回答者自身も知らない回答者に共通する人格と嗜好<br /></li>
+
+<li><a id="org2cefa80"></a>因子分析で見つける隠れた根本要因<br /></li>
+
+<li><a id="org26bfa4a"></a>テキストマイニングで浮かび上がる用語間の類似性<br /></li>
+</ol>
+</li>
+
+<li><a id="org54069cd"></a>因果関係を追いかけて情報の本質を探りだす<br />
+<ol class="org-ol">
+<li><a id="org8a54eb8"></a>書き手の意図が原因となって読み手に影響を及ぼす<br /></li>
+
+<li><a id="orgf0f5aa0"></a>パレート図とフィッシュボーン図で探る主要な因果関係<br /></li>
+
+<li><a id="org4aeee80"></a>見せかけの因果関係，作り上げた因果関係にだまされない<br /></li>
+</ol>
+</li>
+
+<li><a id="org76bc536"></a>近視眼的な問題の見落としを防ぐシステム思考<br />
+<ol class="org-ol">
+<li><a id="org361fb0e"></a>窓枠を通して見える風景しか見ていないことに気づかない<br /></li>
+
+<li><a id="org45b3ff3"></a>やぐら目線が知らせるピンチとチャンス<br /></li>
+
+<li><a id="orgc93728d"></a>抽象のはしごを使ってやぐらを上り下りする<br /></li>
+
+<li><a id="org4cff57c"></a>虫の目，鳥の目，魚の目を使い分ける自在の思考法<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-org8380ce2" class="outline-4">
+<h4 id="org8380ce2"><span class="section-number-4">1.3.4</span> 7章 情報の蓄積 / 学習した知識と既存知識とを結びつけて新たな知識を蓄積する</h4>
+<div class="outline-text-4" id="text-1-3-4">
+</div>
+<ol class="org-ol">
+<li><a id="org8b56526"></a>インターネット依存によって軽視される知識の定着<br />
+<ol class="org-ol">
+<li><a id="orgcea2f90"></a>知識の断片だけで全体を知ったつもりになる危険性<br /></li>
+
+<li><a id="org0bd580c"></a>知識は本の中にもインターネットにもない<br /></li>
+
+<li><a id="org9d0add9"></a>学校で学んだ数学がなぜ役にたたないのか<br /></li>
+
+<li><a id="orgd218d64"></a>学歴や資格取得が知識そのものとは違う理由<br /></li>
+
+<li><a id="org3129b2c"></a>既存の知識と組み合わせることで新しい知識を修得する<br /></li>
+</ol>
+</li>
+
+<li><a id="orgca2fce9"></a>「分かる」ためには情報の整理整頓が不可欠<br />
+<ol class="org-ol">
+<li><a id="org813f1d6"></a>知っているのと分かっているのとでは意味が違う<br /></li>
+
+<li><a id="org89cb647"></a>知識を定着させるために必要となる共感という感情<br /></li>
+
+<li><a id="org7047e9d"></a>情報の整理整頓の先に知識がある<br /></li>
+</ol>
+</li>
+
+<li><a id="org177947e"></a>新たな知識によって既知の知識の意味も変わる<br />
+<ol class="org-ol">
+<li><a id="org78afea3"></a>本を読み返す度に意味が変わってくるのはなぜか<br /></li>
+
+<li><a id="org658b838"></a>知識の組み合わせが上位の知識を創造する<br /></li>
+
+<li><a id="org1940bb3"></a>知識獲得において理系と文系のこだわりは不利になる<br /></li>
+
+<li><a id="org58b077f"></a>知識ノートとしての EverNote, OneNote の利用価値<br /></li>
+</ol>
+</li>
+
+<li><a id="orga4050d9"></a>関連知識の量で決まる未知の情報に対する推理力<br />
+<ol class="org-ol">
+<li><a id="org388225a"></a>一つの分野のマスターが他分野の知識習得をしやすくする<br /></li>
+
+<li><a id="orgd4acc90"></a>反対意見，異論に対する傾聴が関連知識の量を増やす<br /></li>
+
+<li><a id="org6fcb476"></a>旅行や趣味，遊びで得られる知識にも意義がある<br /></li>
+
+<li><a id="org09967f2"></a>知識を増やすための多読<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org00beadf" class="outline-4">
+<h4 id="org00beadf"><span class="section-number-4">1.3.5</span> 8章 情報の生成 / 得られた知識を説明するための情報を生成する</h4>
+<div class="outline-text-4" id="text-1-3-5">
+</div>
+<ol class="org-ol">
+<li><a id="org802ac1a"></a>不要な装飾ばかりで大事な部分がわからない<br />
+<ol class="org-ol">
+<li><a id="orge491f2f"></a>読み手の時間を浪費する作文レポート<br /></li>
+
+<li><a id="org5fbe01d"></a>形容詞は情報伝達における諸刃の刃<br /></li>
+
+<li><a id="orgdbee8bc"></a>ベン図で考える範囲の妥当性<br /></li>
+
+<li><a id="org0705d13"></a>平安時代の吹き抜け屋台にみる省略の力<br /></li>
+
+<li><a id="orgf06da55"></a>Yahoo!ニュースや Google ニュースにみる15文字制限下での要約<br /></li>
+</ol>
+</li>
+
+<li><a id="orge56ae4b"></a>コピペではすぐにはがれるオリジナルのつなぎ目<br />
+<ol class="org-ol">
+<li><a id="orgabd92d8"></a>論文の一部を切り出してつないでみても論文にはならない<br /></li>
+
+<li><a id="org5a55559"></a>提案書に見るコピペの弊害<br /></li>
+
+<li><a id="orgab13047"></a>不当なコピペと正当な引用との違い<br /></li>
+
+<li><a id="org83ef156"></a>三段論法，起承転結から学ぶ論理の作り方<br /></li>
+</ol>
+</li>
+
+<li><a id="orgac41943"></a>100枚の論文にも一枚の要旨にまとめることができる論理性がある<br />
+<ol class="org-ol">
+<li><a id="org7e44cc8"></a>なぜ長文をかけない，論文が苦手なのか<br /></li>
+
+<li><a id="orgb767c98"></a>モデル図で設計する長文<br /></li>
+
+<li><a id="orgfcd029d"></a>論文は長文でなければいけないわけではない<br /></li>
+</ol>
+</li>
+
+<li><a id="orgd052345"></a>結論から組み立てるプレゼンテーション<br />
+<ol class="org-ol">
+<li><a id="org50f18f0"></a>読み手が迷子になる見えない迷路プレゼン<br /></li>
+
+<li><a id="org2a96a93"></a>最後のページまで我慢させる忍耐プレゼン<br /></li>
+
+<li><a id="orga6f97c1"></a>話が進むにつれて論理がぶれていく船酔いプレゼン<br /></li>
+
+<li><a id="org74d2393"></a>プレゼンテーションのデザインは結論ページから<br /></li>
+
+<li><a id="org7e23f57"></a>パンくずリストに学ぶ論理構成の見える化<br /></li>
+</ol>
+</li>
+
+<li><a id="orgf552265"></a>数式に置き換えられない文章構成は論理に欠陥がある<br />
+<ol class="org-ol">
+<li><a id="orgf183623"></a>結論に関係のない無意味な情報が論理をあいまいにする<br /></li>
+
+<li><a id="org5ab6f98"></a>多変量回帰式で設計し検証する論理構造<br /></li>
+
+<li><a id="orgdab4126"></a>アウトラインプロセッサによる構造設計<br /></li>
+
+<li><a id="org52507e5"></a>演繹法と帰納法の違いと相互補完<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgb578f8b" class="outline-4">
+<h4 id="orgb578f8b"><span class="section-number-4">1.3.6</span> 9章 情報の発信 / 情報を必要とする利用者を探しだし，生成した情報を発信する</h4>
+<div class="outline-text-4" id="text-1-3-6">
+</div>
+<ol class="org-ol">
+<li><a id="org7f73804"></a>タイトルを見ても中身がわからず中身を読んでも結論がない文章の氾濫<br />
+<ol class="org-ol">
+<li><a id="orge64ef76"></a>キャッチフレーズとしてのタイトルを考える<br /></li>
+
+<li><a id="orgfe411ef"></a>読み手の論理センスを狂わせる不親切な情報発信<br /></li>
+
+<li><a id="org8174660"></a>お友達感覚の携帯電話メールが電子メールマナーをなし崩しにする<br /></li>
+
+<li><a id="org287a687"></a>話し言葉で発信される電子メールの危険性<br /></li>
+</ol>
+</li>
+
+<li><a id="org23e94e3"></a>この情報は誰に対するものなのかを考えることから始まる<br />
+<ol class="org-ol">
+<li><a id="org6b27e34"></a>口で言うほど簡単ではない顧客志向<br /></li>
+
+<li><a id="org060173f"></a>最大限の理解を得ようとするのではなく誤解を最小に防ぐ<br /></li>
+
+<li><a id="orgd5835b1"></a>聞き手読み手のタイプと関係性によって発信の仕方を変える<br /></li>
+
+<li><a id="org53ac3e5"></a>ドラマのあらすじに学ぶ途中参加者への気配り<br /></li>
+</ol>
+</li>
+
+<li><a id="org07266d2"></a>情報を伝えたい相手が認知してくれなければ意味がない<br />
+<ol class="org-ol">
+<li><a id="org2de0db2"></a>自分勝手な思い込みで相手の立場まで決め付ける人々<br /></li>
+
+<li><a id="org0affaf8"></a>主観だけでも客観だけでも伝わらない<br /></li>
+
+<li><a id="org32965d7"></a>論文作成に必要となる論理展開力と課題設定力<br /></li>
+</ol>
+</li>
+
+<li><a id="orgcb187a3"></a>モラルとコンプライアンスを無視したコンテンツに発信資格なし<br />
+<ol class="org-ol">
+<li><a id="org4a20599"></a>質問，反論を許さない独りよがりの無責任発言<br /></li>
+
+<li><a id="org05ba567"></a>心の痛みがわからない者に差別用語禁止の理由はわからない<br /></li>
+
+<li><a id="orgf552e38"></a>無責任な情報連鎖が起きやすいソーシャルメディアの危険性<br /></li>
+
+<li><a id="orga944d48"></a>コピペで飾られたあってはならない論文<br /></li>
+</ol>
+</li>
+
+<li><a id="org547564d"></a>ソーシャルメディアのプライバシー保護は自己責任<br />
+<ol class="org-ol">
+<li><a id="orga2b9228"></a>情報共有が前提のソーシャルメディア<br /></li>
+
+<li><a id="org2213532"></a>デフォルト設定のままではプライバシーは保護されない<br /></li>
+
+<li><a id="org1820038"></a>画像逆検索で暴露されるプライバシー<br /></li>
+
+<li><a id="orgff67d22"></a>安易な友達連鎖が信頼崩壊を生み出す<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-orgf87de41" class="outline-3">
+<h3 id="orgf87de41"><span class="section-number-3">1.4</span> III部 情報リテラシの今後</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-org04fa5de" class="outline-4">
+<h4 id="org04fa5de"><span class="section-number-4">1.4.1</span> 10章 IT 重視の情報リテラシーは何をのこしたのか</h4>
+<div class="outline-text-4" id="text-1-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgf99c7e5"></a>対面，口頭でのコミュニケーションを避ける現代人<br />
+<ol class="org-ol">
+<li><a id="org66693fe"></a>IT がなければ仕事ができない社員の急増<br /></li>
+
+<li><a id="org540e03e"></a>入力の仕方だけ学んでも仕事はできない<br /></li>
+
+<li><a id="orgf7713f0"></a>正しい日本語ができないままで外国語を使いこなすことはできない<br /></li>
+
+<li><a id="orgd6ffc2a"></a>インターネットとオフィス中心の IT リテラシからの脱却<br /></li>
+</ol>
+</li>
+
+<li><a id="org4b7c9c8"></a>陳腐化する情報技術を後追いするだけの情報リテラシ教育<br />
+<ol class="org-ol">
+<li><a id="org1c5f037"></a>バージョンアップのたびに仕事ができなくなる<br /></li>
+
+<li><a id="orgda35e94"></a>新機能も用途がわからなければ意味がない<br /></li>
+
+<li><a id="org6c3dcf5"></a>10年前, 20年前とさほど変わらないパソコン利用<br /></li>
+
+<li><a id="org7e6cc2e"></a>IT 弱者に必要なのは IT アレルギーの解消と原理教育<br /></li>
+</ol>
+</li>
+
+<li><a id="orga9dd8dc"></a>教育の IT と IT の教育とが区別できていない教育現場<br />
+<ol class="org-ol">
+<li><a id="org1805f71"></a>「教育のIT」で浮かび上がる「ITの教育」の重要性<br /></li>
+
+<li><a id="org1ccd0f4"></a>教育革命とともにコピペ論文を生み出す「教育のIT」の功罪<br /></li>
+
+<li><a id="orgef3aa2b"></a>「教育のIT」は教える側への「ITの教育」も必要とする<br /></li>
+
+<li><a id="org3d70ebe"></a>「教育のIT」に必要なのは IT の使い方ではなく IT との付き合い方<br /></li>
+</ol>
+</li>
+
+<li><a id="orgb02b6fd"></a>「読み書きそろばん」の力を落としかねない IT 教育のジレンマ<br />
+<ol class="org-ol">
+<li><a id="orga74d88d"></a>全世代に見られる読み書きそろばん能力の低下<br /></li>
+
+<li><a id="orgebe7073"></a>手書き機会現象によるボキャブラリの貧弱化<br /></li>
+
+<li><a id="org3a1573b"></a>電子メールに代表される書き言葉の話し言語化<br /></li>
+
+<li><a id="orgc85ade1"></a>計算式との交換で失った筆算の計算プロセス<br /></li>
+</ol>
+</li>
+
+<li><a id="orgb2d55b4"></a>IT重視の情報リテラシ教育がもたらしたもの<br />
+<ol class="org-ol">
+<li><a id="orgc2306a6"></a>無から有を生み出す想像力の喪失<br /></li>
+
+<li><a id="orgf824e54"></a>意見衝突を通じて成長しあう対話力の喪失<br /></li>
+
+<li><a id="org12d1bc4"></a>相手の立場になって考える想像力の喪失<br /></li>
+
+<li><a id="orgaf12db5"></a>季節の変化や人情の機微を感じ取る感性の喪失<br /></li>
+
+<li><a id="org22cc316"></a>アルファの存在に気づく分析力の喪失<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org8427bb3" class="outline-4">
+<h4 id="org8427bb3"><span class="section-number-4">1.4.2</span> 11章 情報リテラシ教育のあるべき姿</h4>
+<div class="outline-text-4" id="text-1-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org8af3117"></a>情報のマネジメント・サイクル（インプット，プロセッシング，アウトプット）から学ぶ<br />
+<ol class="org-ol">
+<li><a id="org59f2c49"></a>情報発信は形のないものづくり<br /></li>
+
+<li><a id="org1a5ac4b"></a>新鮮な素材と正しいレシピ，そして情報リテラシ<br /></li>
+
+<li><a id="orgadea005"></a>わがままの押し付けか，思いやりのもてなしか<br /></li>
+
+<li><a id="orgc9c5ce3"></a>アウトプットに対するフィードバックというインプット<br /></li>
+
+<li><a id="org46a680f"></a>気づき合い，学び合いのマネジメント・サイクル<br /></li>
+</ol>
+</li>
+
+<li><a id="org2e31b11"></a>情報が持つ意味を考える地アタマ力を養う<br />
+<ol class="org-ol">
+<li><a id="orge9693d9"></a>抽象的な言葉には無数の具体的な意味がこめられている<br /></li>
+
+<li><a id="orge46ea30"></a>具体的な言葉には共通する抽象的な意味が横たわっている<br /></li>
+
+<li><a id="org7fdfd2c"></a>一つ一つの言葉の意味を噛みしめるように確かめる<br /></li>
+
+<li><a id="org3f74e46"></a>考えてから話す，聞いた話を咀嚼する<br /></li>
+</ol>
+</li>
+
+<li><a id="org58048dc"></a>ITに偏らない多様な情報対応力を身につける<br />
+<ol class="org-ol">
+<li><a id="orgdf14340"></a>対面だからこそできる真摯に聞くこと<br /></li>
+
+<li><a id="org8362d22"></a>体験してはじめてわかる人の喜びや悲しみ<br /></li>
+
+<li><a id="org5ee29e3"></a>人間力にこだわるリッツカールトンとディズニーランドの凄味<br /></li>
+
+<li><a id="orgbdaf3c5"></a>なんの偏見もなく自分の頭で答えを出すという難しさ<br /></li>
+
+<li><a id="orgd29aa64"></a>限界を知っているからこそ使いこなせるIT<br /></li>
+</ol>
+</li>
+
+<li><a id="org6a1538b"></a>情報発信における品質保証と文責意識を形成する<br />
+<ol class="org-ol">
+<li><a id="org3ee59a2"></a>言いっぱなし，聞き流しがもたらす思考力の喪失<br /></li>
+
+<li><a id="org642589e"></a>いい加減な伝聞に振り回される人々<br /></li>
+
+<li><a id="org770417f"></a>極大と最大を区別しない予言予測のいい加減さ<br /></li>
+
+<li><a id="org9141216"></a>発生確率を表現する話し方<br /></li>
+
+<li><a id="org8f1b9b7"></a>自分の発信に責任を持つという意味<br /></li>
+</ol>
+</li>
+
+<li><a id="org888e7b1"></a>ハウツーではなく考え方重視による陳腐化しない IT リテラシへ<br />
+<ol class="org-ol">
+<li><a id="org716fcac"></a>ITリテラシ教育がITリテラシを低下させるという矛盾<br /></li>
+
+<li><a id="org0fedbbb"></a>ハウツー重視の教育が抱える限界と問題<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: m</p>
+<p class="date">Created: 2018-12-09 日 07:19</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
