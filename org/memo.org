@@ -1,6 +1,6 @@
 * 手描きマップ
 
-- [[org/i_maps/Mindmap勉強ノート_imap.pdf]]
+- [[i_maps/Mindmap勉強ノート_imap.pdf]]
 - [[org/i_maps/all.pdf]]
 - [[org/i_maps/ideaの作り方_imap.pdf]]
 - [[org/i_maps/メモとは_imap.pdf]]
