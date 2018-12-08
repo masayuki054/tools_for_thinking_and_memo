@@ -1,0 +1,32 @@
+http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/commons/abstraction.html
+
+#+BEGIN_QUOTE
+
+ The acts of the mind, wherein it exerts its power over simple ideas,
+ are chiefly these three: 1. Combining several simple ideas into one
+ compound one, and thus all complex ideas are made. 2. The second is
+ bringing two ideas, whether simple or complex, together, and setting
+ them by one another so as to take a view of them at once, without
+ uniting them into one, by which it gets all its ideas of
+ relations. 3. The third is separating them from all other ideas that
+ accompany them in their real existence: this is called abstraction,
+ and thus all its general ideas are made.
+
+John Locke, An Essay Concerning Human Understanding (1690)
+#+END_QUOTE
+
+
+* 抽象化のための手続き
+
+簡単な思い付きを越えて，その力を発揮する，心の働きは，次の三つのこと からなる:
+
+    いくつかの簡単なアイディアを一つにまとめること。
+
+    複合的なアイディアが生まれる。
+    ふたつのアイディアをつなげ，一つにまとめることなしに二つのアイディ アを一緒に見る。
+
+    *関係*というアイディアが生まれる。
+    それを，実在に伴なうすべての他のアイディアから切り離す。
+
+    これは*抽象*と呼ばれ，すべてのアイディアはこのように生まれる。
+

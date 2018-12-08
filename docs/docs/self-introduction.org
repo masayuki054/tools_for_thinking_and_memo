@@ -1,0 +1,22 @@
+* 自己紹介
+
+  http://wiki.cis.iwate-u.ac.jp/~suzuki/lects/suzuki/#outline-container-sec-2
+
+  得意なこと
+  - 計算機代数
+  - プログラマ
+    - プログラミングは，文書の作成に似ている
+  - システム・エンジニア
+  - ネットワーク・エンジニア
+  - ウェブとデジタルツールの活用
+  - Emacs, Org-mode, 共有
+
+  得たこと
+  - 抽象化
+  - 計算論的思考
+  - Webと知識の共有
+
+
+
+
+
