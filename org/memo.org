@@ -1,19 +1,27 @@
+* [[https://drive.google.com/open?id=1pKtUXiA2AEJ-eBcjTVlkE4M4KoFJB4UF][Googleドライブ]]
+
+  [[https://drive.google.com/open?id=1pKtUXiA2AEJ-eBcjTVlkE4M4KoFJB4UF][Googleドライブ]]
+
+  - [[https://drive.google.com/open?id=17hih9wsu45eRxaaEfBQUTHri7mQFHHIG][資料]]
+  - [[https://drive.google.com/open?id=1_ABaB7Y5ET2gxcyjruk9k6BZKRxuZTEh][学生さんのフォルダ]] (閲覧限定)
+
 * 手描きマップ
+
 
 - [[i_maps/Mindmap勉強ノート_imap.pdf]]
 - [[i_maps/ideaの作り方_imap.pdf]]
-- [[org/i_maps/メモとは_imap.pdf]]
-- [[org/i_maps/メモと思考について考えたこと_imap.pdf]]
-- [[org/i_maps/メモと思考の演習問題_imap.pdf]]
-- [[org/i_maps/僕にとってのGTD_imap.pdf]]
-- [[org/i_maps/図で考える_imap.pdf]]
-- [[org/i_maps/図で考えるの7つの図.pdf]]
-- [[org/i_maps/情報リテラシ_imap.pdf]]
-- [[org/i_maps/理解について考えた_imap.pdf]]
-- [[org/i_maps/発想法_imap.pdf]]
-- [[org/i_maps/知的思考の技術勉強_imap.pdf]]
-- [[org/i_maps/講義内容検討のための_imap.pdf]]
-- [[org/i_maps/関連するかもしれない事を検討_imap.pdf]]
+- [[i_maps/メモとは_imap.pdf]]
+- [[i_maps/メモと思考について考えたこと_imap.pdf]]
+- [[i_maps/メモと思考の演習問題_imap.pdf]]
+- [[i_maps/僕にとってのGTD_imap.pdf]]
+- [[i_maps/図で考える_imap.pdf]]
+- [[i_maps/図で考えるの7つの図.pdf]]
+- [[i_maps/情報リテラシ_imap.pdf]]
+- [[i_maps/理解について考えた_imap.pdf]]
+- [[i_maps/発想法_imap.pdf]]
+- [[i_maps/知的思考の技術勉強_imap.pdf]]
+- [[i_maps/講義内容検討のための_imap.pdf]]
+- [[i_maps/関連するかもしれない事を検討_imap.pdf]]
 
 * XMind マップ
 

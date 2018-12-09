@@ -29,17 +29,29 @@
 
    - [[./org/講義概要.org][講義概要]]
 
+   - 二日目の [[https://masayuki054.github.io/tools_for_thinking_and_memo/talk.html][講義内容]] 
+     
+     - アウトライン機能が使える版です
+     - 孫引き資料(.org)の中の外部リンクに開けないものがあります。すみ
+       ません。
+
    - [[./org/talk.org][講義の内容]] (配布資料)
 
      - Emacs org-mode というアウトライン形式で書かれた，ハイパーテキス
        トです。
-     
 
 ** 資料一覧
+
+   - [[https://drive.google.com/open?id=1pKtUXiA2AEJ-eBcjTVlkE4M4KoFJB4UF][Googleドライブ]]
+     - [[https://drive.google.com/open?id=17hih9wsu45eRxaaEfBQUTHri7mQFHHIG][資料]]
+
+   - [[https://drive.google.com/open?id=1_ABaB7Y5ET2gxcyjruk9k6BZKRxuZTEh][学生さんのフォルダ]] (閲覧限定)
 
    - [[./org/text.org][参考にした本やサイトなど一覧]] (未完成)
 
    - [[./org/memo.org][メモの一覧]]
+
+
   
    
 
